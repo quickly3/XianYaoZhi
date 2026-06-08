@@ -20,10 +20,8 @@ export class BookSplitCommand extends CommandRunner {
       return;
     }
     switch (options.command) {
+      // npm run cli -- book-split -- -c split -i ShanHaiJing/Shanhaijing.txt
       case 'split':
-        this.bookSplitService.splitBook(options);
-        break;
-      case 'merge':
         this.bookSplitService.splitBook(options);
         break;
       default:

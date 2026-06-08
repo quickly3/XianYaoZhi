@@ -40,18 +40,11 @@ export class BookSplitService {
    */
 
   splitBook(options) {
-    const inputFile =
-      options?.input ||
-      path.resolve(process.cwd(), 'book/ShanHaiJing/Shanhaijing.txt');
-    const outputDir =
-      options?.output ||
-      path.resolve(process.cwd(), 'book/ShanHaiJing/chapters');
+    const { input } = options;
 
-    if (options?.merge) {
-      this.merge(outputDir, options.merge);
-      return;
-    }
-
+    const inputFile = `book/${input}`;
+    const dirName = path.dirname(inputFile);
+    const outputDir = `${dirName}/chapters`;
     this.split(inputFile, outputDir);
   }
 
@@ -135,25 +128,5 @@ export class BookSplitService {
     }
 
     console.log(`拆分完成：共 ${chapters.length} 个章节，输出至 ${outputDir}`);
-  }
-
-  /**
-   * 合并单个章节文件为一个文件
-   */
-  merge(chaptersDir: string, outputPath: string): void {
-    const files = fs
-      .readdirSync(chaptersDir)
-      .filter((f) => /^\d{2}-.+\.txt$/.test(f))
-      .sort();
-
-    const parts: string[] = [];
-    for (const file of files) {
-      const content = fs.readFileSync(path.join(chaptersDir, file), 'utf-8');
-      parts.push(content);
-    }
-
-    const merged = parts.join('\n');
-    fs.writeFileSync(outputPath, merged, 'utf-8');
-    console.log(`合并完成：${files.length} 个文件 → ${outputPath}`);
   }
 }
