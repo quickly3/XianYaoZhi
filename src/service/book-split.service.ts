@@ -44,7 +44,7 @@ export class BookSplitService {
 
     const inputFile = `book/${input}`;
     const dirName = path.dirname(inputFile);
-    const outputDir = `${dirName}/chapters`;
+    const outputDir = `${dirName}/txt_chapters`;
     this.split(inputFile, outputDir);
   }
 
@@ -128,5 +128,143 @@ export class BookSplitService {
     }
 
     console.log(`拆分完成：共 ${chapters.length} 个章节，输出至 ${outputDir}`);
+  }
+
+  // ──────────── txt → md 转换 ────────────
+
+  /**
+   * 将 txt_chapters 下的章节文件转换为适合阅读文言文的 Markdown，输出到 md_chapters。
+   *
+   * @param book  书籍目录名，如 "ShanHaiJing"
+   * @param chapter 可选的章节前缀，如 "01"，仅转换匹配的文件
+   */
+  txt2md(book: string, chapter?: string): void {
+    const txtDir = `book/${book}/txt_chapters`;
+    const mdDir = `book/${book}/md_chapters`;
+
+    if (!fs.existsSync(txtDir)) {
+      console.error(`错误：输入目录不存在 — ${txtDir}`);
+      return;
+    }
+
+    if (!fs.existsSync(mdDir)) {
+      fs.mkdirSync(mdDir, { recursive: true });
+      console.log(`创建输出目录: ${mdDir}`);
+    }
+
+    const files = fs
+      .readdirSync(txtDir)
+      .filter((f) => f.endsWith('.txt'))
+      .sort();
+
+    if (files.length === 0) {
+      console.error(`错误：${txtDir} 中没有 .txt 文件`);
+      return;
+    }
+
+    const targetFiles = chapter
+      ? files.filter((f) => f.startsWith(chapter))
+      : files;
+
+    if (chapter && targetFiles.length === 0) {
+      console.error(`错误：未找到以 "${chapter}" 开头的文件。可用文件：`);
+      for (const f of files) console.error(`  ${f}`);
+      return;
+    }
+
+    console.log(`转换 ${book} …`);
+    console.log(`  输入: ${txtDir}`);
+    console.log(`  输出: ${mdDir}`);
+    console.log(`  文件: ${targetFiles.length} 个`);
+
+    for (const file of targetFiles) {
+      this.convertTxtFile(file, txtDir, mdDir);
+    }
+
+    console.log('\n转换完成。');
+  }
+
+  /** 单个 txt 文件 → md 文件 */
+  private convertTxtFile(file: string, txtDir: string, mdDir: string): void {
+    const inputPath = path.join(txtDir, file);
+    const outputFile = file.replace(/\.txt$/, '.md');
+    const outputPath = path.join(mdDir, outputFile);
+    const raw = fs.readFileSync(inputPath, 'utf-8');
+    const isPreface = file.startsWith('00-');
+    const md = this.convertToMarkdown(raw, isPreface);
+    fs.writeFileSync(outputPath, md, 'utf-8');
+    console.log(`  ✓ ${file} → ${outputFile}`);
+  }
+
+  /** 判断某行是否为前言中的小节标题 */
+  private isPrefaceHeading(line: string): boolean {
+    const trimmed = line.trim();
+    if (trimmed.length < 2 || trimmed.length > 30) return false;
+    if (line.startsWith('\u3000')) return false;
+    const starters = [
+      '又',
+      '有',
+      '凡',
+      '自',
+      '东',
+      '南',
+      '西',
+      '北',
+      '其',
+      '此',
+      '是',
+      '故',
+      '则',
+    ];
+    if (starters.some((s) => trimmed.startsWith(s))) return false;
+    if (trimmed.startsWith('右')) return false;
+    if (trimmed.startsWith('(') || trimmed.startsWith('[')) return false;
+    return true;
+  }
+
+  /** 将 txt 内容转换为适合阅读文言文的 Markdown */
+  private convertToMarkdown(content: string, isPreface: boolean): string {
+    const lines = content.split(/\r?\n/);
+    const result: string[] = [];
+    let isFirstLine = true;
+
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (trimmed === '') {
+        if (result.length > 0 && result[result.length - 1] !== '') {
+          result.push('');
+        }
+        continue;
+      }
+
+      if (isFirstLine) {
+        result.push(`## ${trimmed}`);
+        result.push('');
+        isFirstLine = false;
+        continue;
+      }
+
+      if (isPreface && this.isPrefaceHeading(line)) {
+        result.push(`### ${trimmed}`);
+        result.push('');
+        continue;
+      }
+
+      if (isPreface && trimmed.startsWith('[')) {
+        // 将 ]: 替换为 ]： 防止 Markdown 将其解释为参考式链接定义（方案2）
+        const fixed = trimmed.replace(/\]\s*:\s*/, ']：');
+        result.push(`- ${fixed}`);
+        continue;
+      }
+
+      result.push(trimmed);
+      result.push('');
+    }
+
+    while (result.length > 0 && result[result.length - 1] === '') {
+      result.pop();
+    }
+
+    return result.join('\n') + '\n';
   }
 }
