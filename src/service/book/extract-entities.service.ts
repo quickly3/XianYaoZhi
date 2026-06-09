@@ -26,8 +26,7 @@ export class ExtractEntitiesService {
   async extract(options: ExtractEntitiesOptions): Promise<void> {
     const { book, chapter } = options;
     const sourceDir =
-      options.sourceDir ??
-      path.join('book', book, 'txt_chapters');
+      options.sourceDir ?? path.join('book', book, 'txt_chapters');
     const entitiesDir = path.join('book', book, 'entities');
 
     // 确保 entities 目录存在

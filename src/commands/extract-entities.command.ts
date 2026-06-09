@@ -14,9 +14,7 @@ interface ExtractEntitiesOptions {
     '古籍实体提取命令。使用 DeepSeek 从章节文本中提取命名实体，结果保存到 entities 目录。使用 `npm run cli -- extract-entities --help` 查看帮助。',
 })
 export class ExtractEntitiesCommand extends CommandRunner {
-  constructor(
-    private readonly extractEntitiesService: ExtractEntitiesService,
-  ) {
+  constructor(private readonly extractEntitiesService: ExtractEntitiesService) {
     super();
   }
 
