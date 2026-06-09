@@ -1,0 +1,1782 @@
+{
+  "metadata": {
+    "book": "ShanHaiJing",
+    "chapter": "南山经第一",
+    "sourceFile": "book/ShanHaiJing/md_chapters/01-南山经.md",
+    "coordinateSystem": "relative",
+    "distanceUnit": "里",
+    "notes": [
+      "规则抽取结果，仅基于当前章节文本。",
+      "保留原文异体字、造字描述与异写，不做外部校勘。",
+      "坐标需由后续脚本根据 traverse 边再行推算。"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "place-001",
+      "name": "招瑶之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "南山经之首曰鹊山。其首曰招瑶之山，临于西海之上。多桂多金玉。有草焉，其状如韭而青华，其名曰祝馀，食之不饥。有木焉，其状如榖而黑理，其华四照。其名曰迷榖，佩之不迷。有兽焉，其状如禺而白耳，伏行人走，其名曰狌狌，食之善走。丽[鹿/旨]之水出焉，而西流注于海，其中多育沛，佩之无瘕疾。"
+      },
+      "routeSection": "鹊山",
+      "routeOrder": 1
+    },
+    {
+      "id": "place-002",
+      "name": "丽[鹿/旨]之水",
+      "category": "place",
+      "type": "river",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "南山经之首曰鹊山。其首曰招瑶之山，临于西海之上。多桂多金玉。有草焉，其状如韭而青华，其名曰祝馀，食之不饥。有木焉，其状如榖而黑理，其华四照。其名曰迷榖，佩之不迷。有兽焉，其状如禺而白耳，伏行人走，其名曰狌狌，食之善走。丽[鹿/旨]之水出焉，而西流注于海，其中多育沛，佩之无瘕疾。"
+      },
+      "containsEntity": [
+        "entity-001",
+        "entity-002",
+        "entity-003"
+      ]
+    },
+    {
+      "id": "place-003",
+      "name": "海",
+      "category": "place",
+      "type": "sea",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "南山经之首曰鹊山。其首曰招瑶之山，临于西海之上。多桂多金玉。有草焉，其状如韭而青华，其名曰祝馀，食之不饥。有木焉，其状如榖而黑理，其华四照。其名曰迷榖，佩之不迷。有兽焉，其状如禺而白耳，伏行人走，其名曰狌狌，食之善走。丽[鹿/旨]之水出焉，而西流注于海，其中多育沛，佩之无瘕疾。"
+      }
+    },
+    {
+      "id": "place-004",
+      "name": "西海",
+      "category": "place",
+      "type": "sea",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "南山经之首曰鹊山。其首曰招瑶之山，临于西海之上。多桂多金玉。有草焉，其状如韭而青华，其名曰祝馀，食之不饥。有木焉，其状如榖而黑理，其华四照。其名曰迷榖，佩之不迷。有兽焉，其状如禺而白耳，伏行人走，其名曰狌狌，食之善走。丽[鹿/旨]之水出焉，而西流注于海，其中多育沛，佩之无瘕疾。"
+      }
+    },
+    {
+      "id": "place-005",
+      "name": "堂庭之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百里曰堂庭之山。金[木炎]木，多白猿，多水玉，多黄金。"
+      },
+      "routeSection": "鹊山",
+      "routeOrder": 2
+    },
+    {
+      "id": "place-006",
+      "name": "猨翼之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百八十里曰猨翼之山。其中多怪兽，水多怪鱼。多白玉，多蝮虫，多怪蛇，不可以上。"
+      },
+      "routeSection": "鹊山",
+      "routeOrder": 3
+    },
+    {
+      "id": "place-007",
+      "name": "杻阳之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百七十里曰杻阳之山。其阳多赤金。其阴多白金。有兽焉，其状如马而白首，其文如虎而赤尾，其音如谣，其名曰鹿蜀，佩之宜子孙。怪水出焉，而东流注于宪翼之水。其中多玄鱼，其状如龟而鸟首虺尾，其名曰旋龟，其音如判木，佩之不聋，可以为底。"
+      },
+      "routeSection": "鹊山",
+      "routeOrder": 4
+    },
+    {
+      "id": "place-008",
+      "name": "怪水",
+      "category": "place",
+      "type": "river",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百七十里曰杻阳之山。其阳多赤金。其阴多白金。有兽焉，其状如马而白首，其文如虎而赤尾，其音如谣，其名曰鹿蜀，佩之宜子孙。怪水出焉，而东流注于宪翼之水。其中多玄鱼，其状如龟而鸟首虺尾，其名曰旋龟，其音如判木，佩之不聋，可以为底。"
+      },
+      "containsEntity": [
+        "entity-004"
+      ]
+    },
+    {
+      "id": "place-009",
+      "name": "宪翼之水",
+      "category": "place",
+      "type": "river",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百七十里曰杻阳之山。其阳多赤金。其阴多白金。有兽焉，其状如马而白首，其文如虎而赤尾，其音如谣，其名曰鹿蜀，佩之宜子孙。怪水出焉，而东流注于宪翼之水。其中多玄鱼，其状如龟而鸟首虺尾，其名曰旋龟，其音如判木，佩之不聋，可以为底。"
+      }
+    },
+    {
+      "id": "place-010",
+      "name": "柢山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百里柢山。多水，无草木。有鱼焉，其状如牛，陵居，蛇尾有翼，其羽在[鱼去]下，其音如留牛，其名曰鯥，冬死而复生。食之无肿疾。"
+      },
+      "routeSection": "鹊山",
+      "routeOrder": 5,
+      "containsEntity": [
+        "entity-005"
+      ]
+    },
+    {
+      "id": "place-011",
+      "name": "亶爰 之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百里曰亶爰 之山。多水，无草木，不可以上。有兽焉，其状如狸而有髦，其名曰类，自为牝牡，食者不妒。"
+      },
+      "routeSection": "鹊山",
+      "routeOrder": 6,
+      "containsEntity": [
+        "entity-006",
+        "entity-007",
+        "entity-008"
+      ]
+    },
+    {
+      "id": "place-012",
+      "name": "青丘之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百里曰青丘之山。其阳多玉，其阴多青[青護-言]。有兽焉，其状如狐而九尾，其音如婴儿，能食人，食者不蛊。有鸟焉，其状如鸠，其音如呵，名曰灌灌，佩之不惑。英水出焉，南流注于即流之泽。其中多赤[鱼需]，其状如鱼而人面，其音如鸳鸯，食之不疥。"
+      },
+      "routeSection": "鹊山",
+      "routeOrder": 7
+    },
+    {
+      "id": "place-013",
+      "name": "英水",
+      "category": "place",
+      "type": "river",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百里曰青丘之山。其阳多玉，其阴多青[青護-言]。有兽焉，其状如狐而九尾，其音如婴儿，能食人，食者不蛊。有鸟焉，其状如鸠，其音如呵，名曰灌灌，佩之不惑。英水出焉，南流注于即流之泽。其中多赤[鱼需]，其状如鱼而人面，其音如鸳鸯，食之不疥。"
+      },
+      "containsEntity": [
+        "entity-009",
+        "entity-010",
+        "entity-011"
+      ]
+    },
+    {
+      "id": "place-014",
+      "name": "即流之泽",
+      "category": "place",
+      "type": "marsh",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百里曰青丘之山。其阳多玉，其阴多青[青護-言]。有兽焉，其状如狐而九尾，其音如婴儿，能食人，食者不蛊。有鸟焉，其状如鸠，其音如呵，名曰灌灌，佩之不惑。英水出焉，南流注于即流之泽。其中多赤[鱼需]，其状如鱼而人面，其音如鸳鸯，食之不疥。"
+      }
+    },
+    {
+      "id": "place-015",
+      "name": "箕尾之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百五十里曰箕尾之山，其尾[足鵕-鸟]于东海，多沙石。汉水出焉，而南流注于[氵育]，其中多白玉。"
+      },
+      "routeSection": "鹊山",
+      "routeOrder": 8
+    },
+    {
+      "id": "place-016",
+      "name": "汉水",
+      "category": "place",
+      "type": "river",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百五十里曰箕尾之山，其尾[足鵕-鸟]于东海，多沙石。汉水出焉，而南流注于[氵育]，其中多白玉。"
+      }
+    },
+    {
+      "id": "place-017",
+      "name": "[氵育]",
+      "category": "place",
+      "type": "toponym",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百五十里曰箕尾之山，其尾[足鵕-鸟]于东海，多沙石。汉水出焉，而南流注于[氵育]，其中多白玉。"
+      }
+    },
+    {
+      "id": "place-018",
+      "name": "柜山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "《南次二经》之首曰柜山，西临流黄，北望诸[囟比]，东望长右。英水出焉，西南流注于赤水。其中多白玉，多丹粟。有兽焉，其状如豚，有距，其音如狗吠，其名曰狸力，见则其县多土功。有鸟焉，其状如鸱而人手，其音如痹，其名曰[朱鸟]，其名自号也，见则其县多放士。"
+      },
+      "routeSection": "南次二经",
+      "routeOrder": 1
+    },
+    {
+      "id": "place-019",
+      "name": "赤水",
+      "category": "place",
+      "type": "river",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "《南次二经》之首曰柜山，西临流黄，北望诸[囟比]，东望长右。英水出焉，西南流注于赤水。其中多白玉，多丹粟。有兽焉，其状如豚，有距，其音如狗吠，其名曰狸力，见则其县多土功。有鸟焉，其状如鸱而人手，其音如痹，其名曰[朱鸟]，其名自号也，见则其县多放士。"
+      }
+    },
+    {
+      "id": "place-020",
+      "name": "诸[囟比]",
+      "category": "place",
+      "type": "toponym",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "《南次二经》之首曰柜山，西临流黄，北望诸[囟比]，东望长右。英水出焉，西南流注于赤水。其中多白玉，多丹粟。有兽焉，其状如豚，有距，其音如狗吠，其名曰狸力，见则其县多土功。有鸟焉，其状如鸱而人手，其音如痹，其名曰[朱鸟]，其名自号也，见则其县多放士。"
+      }
+    },
+    {
+      "id": "place-021",
+      "name": "长右",
+      "category": "place",
+      "type": "toponym",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "《南次二经》之首曰柜山，西临流黄，北望诸[囟比]，东望长右。英水出焉，西南流注于赤水。其中多白玉，多丹粟。有兽焉，其状如豚，有距，其音如狗吠，其名曰狸力，见则其县多土功。有鸟焉，其状如鸱而人手，其音如痹，其名曰[朱鸟]，其名自号也，见则其县多放士。"
+      }
+    },
+    {
+      "id": "place-022",
+      "name": "长右之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "东南四百五十里曰长右之山。无草木，多水。有兽焉，其状如禺而四耳，其名长右，其音如吟，见则郡县大水。"
+      },
+      "routeSection": "南次二经",
+      "routeOrder": 2,
+      "containsEntity": [
+        "entity-012"
+      ]
+    },
+    {
+      "id": "place-023",
+      "name": "尧光之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百四十里曰尧光之山。其阳多玉，其阴多金。有兽焉，其状如人而彘鬣，穴居而冬蛰，其名曰猾褢，其音如斫木，见则县有大繇。"
+      },
+      "routeSection": "南次二经",
+      "routeOrder": 3,
+      "containsEntity": [
+        "entity-013"
+      ]
+    },
+    {
+      "id": "place-024",
+      "name": "羽山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百五十里曰羽山。其下多水，其上多雨，无草木，多蝮虫。"
+      },
+      "routeSection": "南次二经",
+      "routeOrder": 4
+    },
+    {
+      "id": "place-025",
+      "name": "瞿父之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百七十里曰瞿父之山。无草木，多金玉。"
+      },
+      "routeSection": "南次二经",
+      "routeOrder": 5
+    },
+    {
+      "id": "place-026",
+      "name": "句余之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东四百里曰句余之山。无草木，多金玉。"
+      },
+      "routeSection": "南次二经",
+      "routeOrder": 6
+    },
+    {
+      "id": "place-027",
+      "name": "浮玉之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰浮玉之山。北望具区，东望诸[囱比]。有兽焉，其状如虎而牛尾，其音如吠犬，其名曰彘，是食人。苕水出于其阴，北流至于具区，其中多[此/鱼]鱼。"
+      },
+      "routeSection": "南次二经",
+      "routeOrder": 7
+    },
+    {
+      "id": "place-028",
+      "name": "苕水",
+      "category": "place",
+      "type": "river",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰浮玉之山。北望具区，东望诸[囱比]。有兽焉，其状如虎而牛尾，其音如吠犬，其名曰彘，是食人。苕水出于其阴，北流至于具区，其中多[此/鱼]鱼。"
+      },
+      "containsEntity": [
+        "entity-014"
+      ]
+    },
+    {
+      "id": "place-029",
+      "name": "具区",
+      "category": "place",
+      "type": "lake",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰浮玉之山。北望具区，东望诸[囱比]。有兽焉，其状如虎而牛尾，其音如吠犬，其名曰彘，是食人。苕水出于其阴，北流至于具区，其中多[此/鱼]鱼。"
+      }
+    },
+    {
+      "id": "place-030",
+      "name": "诸[囱比]",
+      "category": "place",
+      "type": "toponym",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰浮玉之山。北望具区，东望诸[囱比]。有兽焉，其状如虎而牛尾，其音如吠犬，其名曰彘，是食人。苕水出于其阴，北流至于具区，其中多[此/鱼]鱼。"
+      }
+    },
+    {
+      "id": "place-031",
+      "name": "成山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰成山。四方而三坛，其上多金玉，其下多青雘，[门◎豕]水出焉，而南流注于虖勺，其中多黄金。"
+      },
+      "routeSection": "南次二经",
+      "routeOrder": 8
+    },
+    {
+      "id": "place-032",
+      "name": "[门◎豕]水",
+      "category": "place",
+      "type": "river",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰成山。四方而三坛，其上多金玉，其下多青雘，[门◎豕]水出焉，而南流注于虖勺，其中多黄金。"
+      }
+    },
+    {
+      "id": "place-033",
+      "name": "虖勺",
+      "category": "place",
+      "type": "toponym",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰成山。四方而三坛，其上多金玉，其下多青雘，[门◎豕]水出焉，而南流注于虖勺，其中多黄金。"
+      }
+    },
+    {
+      "id": "place-034",
+      "name": "会稽之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰会稽之山，四方。其上多金玉，其下多[石夫]石。勺水出焉，而南流注于湨。"
+      },
+      "routeSection": "南次二经",
+      "routeOrder": 9
+    },
+    {
+      "id": "place-035",
+      "name": "勺水",
+      "category": "place",
+      "type": "river",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰会稽之山，四方。其上多金玉，其下多[石夫]石。勺水出焉，而南流注于湨。"
+      }
+    },
+    {
+      "id": "place-036",
+      "name": "湨",
+      "category": "place",
+      "type": "toponym",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰会稽之山，四方。其上多金玉，其下多[石夫]石。勺水出焉，而南流注于湨。"
+      }
+    },
+    {
+      "id": "place-037",
+      "name": "夷山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰夷山。无草木，多沙石，湨水出焉，而南流注于列涂。"
+      },
+      "routeSection": "南次二经",
+      "routeOrder": 10
+    },
+    {
+      "id": "place-038",
+      "name": "湨水",
+      "category": "place",
+      "type": "river",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰夷山。无草木，多沙石，湨水出焉，而南流注于列涂。"
+      }
+    },
+    {
+      "id": "place-039",
+      "name": "列涂",
+      "category": "place",
+      "type": "toponym",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰夷山。无草木，多沙石，湨水出焉，而南流注于列涂。"
+      }
+    },
+    {
+      "id": "place-040",
+      "name": "仆勾之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰仆勾之山，其上多金玉，其下多草木。无鸟兽，无水。"
+      },
+      "routeSection": "南次二经",
+      "routeOrder": 11
+    },
+    {
+      "id": "place-041",
+      "name": "咸阴之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰咸阴之山，无草木，无水。"
+      },
+      "routeSection": "南次二经",
+      "routeOrder": 12
+    },
+    {
+      "id": "place-042",
+      "name": "洵山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东四百里曰洵山。其如多金，其阴多玉，有兽焉，其状如羊而无口，不可杀也，其名曰[羊患]。洵水出焉，而南流注于阏之泽，其中多芘蠃。"
+      },
+      "routeSection": "南次二经",
+      "routeOrder": 13
+    },
+    {
+      "id": "place-043",
+      "name": "洵水",
+      "category": "place",
+      "type": "river",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东四百里曰洵山。其如多金，其阴多玉，有兽焉，其状如羊而无口，不可杀也，其名曰[羊患]。洵水出焉，而南流注于阏之泽，其中多芘蠃。"
+      },
+      "containsEntity": [
+        "entity-015"
+      ]
+    },
+    {
+      "id": "place-044",
+      "name": "阏之泽",
+      "category": "place",
+      "type": "marsh",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东四百里曰洵山。其如多金，其阴多玉，有兽焉，其状如羊而无口，不可杀也，其名曰[羊患]。洵水出焉，而南流注于阏之泽，其中多芘蠃。"
+      }
+    },
+    {
+      "id": "place-045",
+      "name": "虖勺之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东四百里曰虖勺之山。其上多梓枏，其下多荆杞。滂水出焉，而东流注于海。"
+      },
+      "routeSection": "南次二经",
+      "routeOrder": 14
+    },
+    {
+      "id": "place-046",
+      "name": "滂水",
+      "category": "place",
+      "type": "river",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东四百里曰虖勺之山。其上多梓枏，其下多荆杞。滂水出焉，而东流注于海。"
+      }
+    },
+    {
+      "id": "place-047",
+      "name": "区吴之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰区吴之山。无草木，多沙石，鹿水出焉，而南流注于滂水。"
+      },
+      "routeSection": "南次二经",
+      "routeOrder": 15
+    },
+    {
+      "id": "place-048",
+      "name": "鹿水",
+      "category": "place",
+      "type": "river",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰区吴之山。无草木，多沙石，鹿水出焉，而南流注于滂水。"
+      }
+    },
+    {
+      "id": "place-049",
+      "name": "鹿吴之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰鹿吴之山。上无草木，多金石。泽更之水出焉，而南流注于滂水。水有兽焉，名曰蛊雕，其状如雕而有角，其音如婴儿之音，是食人。"
+      },
+      "routeSection": "南次二经",
+      "routeOrder": 16
+    },
+    {
+      "id": "place-050",
+      "name": "泽更之水",
+      "category": "place",
+      "type": "river",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰鹿吴之山。上无草木，多金石。泽更之水出焉，而南流注于滂水。水有兽焉，名曰蛊雕，其状如雕而有角，其音如婴儿之音，是食人。"
+      },
+      "containsEntity": [
+        "entity-016"
+      ]
+    },
+    {
+      "id": "place-051",
+      "name": "漆吴之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "东五百里曰漆吴之山。无草木，多博石，无玉。处于东海，望丘山，其光载出载入，是惟日次。"
+      },
+      "routeSection": "南次二经",
+      "routeOrder": 17
+    },
+    {
+      "id": "place-052",
+      "name": "东海",
+      "category": "place",
+      "type": "sea",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "东五百里曰漆吴之山。无草木，多博石，无玉。处于东海，望丘山，其光载出载入，是惟日次。"
+      }
+    },
+    {
+      "id": "place-053",
+      "name": "天虞之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "《南次三经》之首，曰天虞之山。其下多水，不可以上。东五百里曰祷过之山，其上多金玉，其下多犀兕多象，有鸟焉，其状如[交鸟]而白首三足人面，其名曰瞿如，其鸣自号也。泿水出焉，而南流注于海。其中有虎蛟，其状鱼身而蛇尾，其音如鸳鸯，食者不肿，可以已痔。"
+      },
+      "routeSection": "南次三经",
+      "routeOrder": 1
+    },
+    {
+      "id": "place-054",
+      "name": "泿水",
+      "category": "place",
+      "type": "river",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "《南次三经》之首，曰天虞之山。其下多水，不可以上。东五百里曰祷过之山，其上多金玉，其下多犀兕多象，有鸟焉，其状如[交鸟]而白首三足人面，其名曰瞿如，其鸣自号也。泿水出焉，而南流注于海。其中有虎蛟，其状鱼身而蛇尾，其音如鸳鸯，食者不肿，可以已痔。"
+      },
+      "containsEntity": [
+        "entity-017"
+      ]
+    },
+    {
+      "id": "place-055",
+      "name": "丹穴之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰丹穴之山。其上多金玉。丹水出焉，而南流注于渤海。有鸟焉，其状如鸡，五采而文，名曰凤皇，首文曰德，翼文曰义，背文曰礼，膺文曰仁，腹文曰信。是鸟也，饮食自然，自歌自舞，见则天下安宁。"
+      },
+      "routeSection": "南次三经",
+      "routeOrder": 2
+    },
+    {
+      "id": "place-056",
+      "name": "丹水",
+      "category": "place",
+      "type": "river",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰丹穴之山。其上多金玉。丹水出焉，而南流注于渤海。有鸟焉，其状如鸡，五采而文，名曰凤皇，首文曰德，翼文曰义，背文曰礼，膺文曰仁，腹文曰信。是鸟也，饮食自然，自歌自舞，见则天下安宁。"
+      },
+      "containsEntity": [
+        "entity-018"
+      ]
+    },
+    {
+      "id": "place-057",
+      "name": "渤海",
+      "category": "place",
+      "type": "sea",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰丹穴之山。其上多金玉。丹水出焉，而南流注于渤海。有鸟焉，其状如鸡，五采而文，名曰凤皇，首文曰德，翼文曰义，背文曰礼，膺文曰仁，腹文曰信。是鸟也，饮食自然，自歌自舞，见则天下安宁。"
+      }
+    },
+    {
+      "id": "place-058",
+      "name": "发爽之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰发爽之山。无草木，多水，多白猿。[氵凡]水出焉，而南流注于勃海。"
+      },
+      "routeSection": "南次三经",
+      "routeOrder": 3
+    },
+    {
+      "id": "place-059",
+      "name": "[氵凡]水",
+      "category": "place",
+      "type": "river",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰发爽之山。无草木，多水，多白猿。[氵凡]水出焉，而南流注于勃海。"
+      }
+    },
+    {
+      "id": "place-060",
+      "name": "勃海",
+      "category": "place",
+      "type": "sea",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰发爽之山。无草木，多水，多白猿。[氵凡]水出焉，而南流注于勃海。"
+      }
+    },
+    {
+      "id": "place-061",
+      "name": "旄山之尾",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东四百里至于旄山之尾，其南有谷，曰育遗，多怪鸟，凯风自是出。"
+      },
+      "routeSection": "南次三经",
+      "routeOrder": 4
+    },
+    {
+      "id": "place-062",
+      "name": "非山之首",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东四百里，至于非山之首。其上多金玉，无水，其下多蝮虫。"
+      },
+      "routeSection": "南次三经",
+      "routeOrder": 5
+    },
+    {
+      "id": "place-063",
+      "name": "阳夹之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰阳夹之山。无草木，多水。"
+      },
+      "routeSection": "南次三经",
+      "routeOrder": 6
+    },
+    {
+      "id": "place-064",
+      "name": "灌湘之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰灌湘之山。上多木，无草，多怪鸟，无兽。"
+      },
+      "routeSection": "南次三经",
+      "routeOrder": 7
+    },
+    {
+      "id": "place-065",
+      "name": "鸡山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰鸡山。其上多金，其下多丹雘。黑水出焉，而南流注于海。其中有[鱼专]鱼，其状如鲋而彘毛，其音如豚，见则天下大旱。"
+      },
+      "routeSection": "南次三经",
+      "routeOrder": 8
+    },
+    {
+      "id": "place-066",
+      "name": "黑水",
+      "category": "place",
+      "type": "river",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰鸡山。其上多金，其下多丹雘。黑水出焉，而南流注于海。其中有[鱼专]鱼，其状如鲋而彘毛，其音如豚，见则天下大旱。"
+      }
+    },
+    {
+      "id": "place-067",
+      "name": "令丘之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东四百里曰令丘之山。 无草木，多火。其南有谷焉，曰中谷，条风自是出。有鸟焉，其状如袅，人面四目而有耳，其名曰顒，其鸣自号也，见则天下大旱。"
+      },
+      "routeSection": "南次三经",
+      "routeOrder": 9,
+      "containsEntity": [
+        "entity-019"
+      ]
+    },
+    {
+      "id": "place-068",
+      "name": "仑者之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百七十里曰仑者之山。其上多金玉，其下多青雘。有木焉，其状如榖而赤理，其汗如漆，其味如饴，食者不饥，可以释劳，其名曰白[艹/咎]，可以血玉。"
+      },
+      "routeSection": "南次三经",
+      "routeOrder": 10,
+      "containsEntity": [
+        "entity-020"
+      ]
+    },
+    {
+      "id": "place-069",
+      "name": "禺[高/木]之山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百八十里曰禺[高/木]之山。多怪兽，多大蛇。"
+      },
+      "routeSection": "南次三经",
+      "routeOrder": 11
+    },
+    {
+      "id": "place-070",
+      "name": "南禺这山",
+      "category": "place",
+      "type": "mountain",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百八十里，曰南禺这山。其上多金玉，其下多水。有穴焉，水出辄入，夏乃出，冬则闭。佐水出焉，而东南流注于海，有凤皇、鵷雏。"
+      },
+      "routeSection": "南次三经",
+      "routeOrder": 12
+    },
+    {
+      "id": "place-071",
+      "name": "佐水",
+      "category": "place",
+      "type": "river",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百八十里，曰南禺这山。其上多金玉，其下多水。有穴焉，水出辄入，夏乃出，冬则闭。佐水出焉，而东南流注于海，有凤皇、鵷雏。"
+      },
+      "containsEntity": [
+        "entity-018",
+        "entity-021"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "place-002",
+      "to": "place-003",
+      "relation": "watersFlow",
+      "direction": "西",
+      "snippet": "丽[鹿/旨]之水出焉，而西流注于海，",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "南山经之首曰鹊山。其首曰招瑶之山，临于西海之上。多桂多金玉。有草焉，其状如韭而青华，其名曰祝馀，食之不饥。有木焉，其状如榖而黑理，其华四照。其名曰迷榖，佩之不迷。有兽焉，其状如禺而白耳，伏行人走，其名曰狌狌，食之善走。丽[鹿/旨]之水出焉，而西流注于海，其中多育沛，佩之无瘕疾。"
+      }
+    },
+    {
+      "from": "place-001",
+      "to": "place-004",
+      "relation": "overlooks",
+      "snippet": "临于西海之上。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "南山经之首曰鹊山。其首曰招瑶之山，临于西海之上。多桂多金玉。有草焉，其状如韭而青华，其名曰祝馀，食之不饥。有木焉，其状如榖而黑理，其华四照。其名曰迷榖，佩之不迷。有兽焉，其状如禺而白耳，伏行人走，其名曰狌狌，食之善走。丽[鹿/旨]之水出焉，而西流注于海，其中多育沛，佩之无瘕疾。"
+      }
+    },
+    {
+      "from": "place-001",
+      "to": "place-005",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 300,
+      "snippet": "又东三百里曰堂庭之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百里曰堂庭之山。金[木炎]木，多白猿，多水玉，多黄金。"
+      }
+    },
+    {
+      "from": "place-005",
+      "to": "place-006",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 380,
+      "snippet": "又东三百八十里曰猨翼之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百八十里曰猨翼之山。其中多怪兽，水多怪鱼。多白玉，多蝮虫，多怪蛇，不可以上。"
+      }
+    },
+    {
+      "from": "place-006",
+      "to": "place-007",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 370,
+      "snippet": "又东三百七十里曰杻阳之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百七十里曰杻阳之山。其阳多赤金。其阴多白金。有兽焉，其状如马而白首，其文如虎而赤尾，其音如谣，其名曰鹿蜀，佩之宜子孙。怪水出焉，而东流注于宪翼之水。其中多玄鱼，其状如龟而鸟首虺尾，其名曰旋龟，其音如判木，佩之不聋，可以为底。"
+      }
+    },
+    {
+      "from": "place-008",
+      "to": "place-009",
+      "relation": "watersFlow",
+      "direction": "东",
+      "snippet": "怪水出焉，而东流注于宪翼之水。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百七十里曰杻阳之山。其阳多赤金。其阴多白金。有兽焉，其状如马而白首，其文如虎而赤尾，其音如谣，其名曰鹿蜀，佩之宜子孙。怪水出焉，而东流注于宪翼之水。其中多玄鱼，其状如龟而鸟首虺尾，其名曰旋龟，其音如判木，佩之不聋，可以为底。"
+      }
+    },
+    {
+      "from": "place-007",
+      "to": "place-010",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 300,
+      "snippet": "又东三百里柢山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百里柢山。多水，无草木。有鱼焉，其状如牛，陵居，蛇尾有翼，其羽在[鱼去]下，其音如留牛，其名曰鯥，冬死而复生。食之无肿疾。"
+      }
+    },
+    {
+      "from": "place-010",
+      "to": "place-011",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 300,
+      "snippet": "又东三百里曰亶爰 之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百里曰亶爰 之山。多水，无草木，不可以上。有兽焉，其状如狸而有髦，其名曰类，自为牝牡，食者不妒。"
+      }
+    },
+    {
+      "from": "place-011",
+      "to": "place-012",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 300,
+      "snippet": "又东三百里曰青丘之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百里曰青丘之山。其阳多玉，其阴多青[青護-言]。有兽焉，其状如狐而九尾，其音如婴儿，能食人，食者不蛊。有鸟焉，其状如鸠，其音如呵，名曰灌灌，佩之不惑。英水出焉，南流注于即流之泽。其中多赤[鱼需]，其状如鱼而人面，其音如鸳鸯，食之不疥。"
+      }
+    },
+    {
+      "from": "place-013",
+      "to": "place-014",
+      "relation": "watersFlow",
+      "direction": "南",
+      "snippet": "英水出焉，南流注于即流之泽。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百里曰青丘之山。其阳多玉，其阴多青[青護-言]。有兽焉，其状如狐而九尾，其音如婴儿，能食人，食者不蛊。有鸟焉，其状如鸠，其音如呵，名曰灌灌，佩之不惑。英水出焉，南流注于即流之泽。其中多赤[鱼需]，其状如鱼而人面，其音如鸳鸯，食之不疥。"
+      }
+    },
+    {
+      "from": "place-012",
+      "to": "place-015",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 350,
+      "snippet": "又东三百五十里曰箕尾之山，其尾[足鵕-鸟]于东海，多沙石。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百五十里曰箕尾之山，其尾[足鵕-鸟]于东海，多沙石。汉水出焉，而南流注于[氵育]，其中多白玉。"
+      }
+    },
+    {
+      "from": "place-016",
+      "to": "place-017",
+      "relation": "watersFlow",
+      "direction": "南",
+      "snippet": "汉水出焉，而南流注于[氵育]，",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百五十里曰箕尾之山，其尾[足鵕-鸟]于东海，多沙石。汉水出焉，而南流注于[氵育]，其中多白玉。"
+      }
+    },
+    {
+      "from": "place-013",
+      "to": "place-019",
+      "relation": "watersFlow",
+      "direction": "西南",
+      "snippet": "英水出焉，西南流注于赤水。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "《南次二经》之首曰柜山，西临流黄，北望诸[囟比]，东望长右。英水出焉，西南流注于赤水。其中多白玉，多丹粟。有兽焉，其状如豚，有距，其音如狗吠，其名曰狸力，见则其县多土功。有鸟焉，其状如鸱而人手，其音如痹，其名曰[朱鸟]，其名自号也，见则其县多放士。"
+      }
+    },
+    {
+      "from": "place-018",
+      "to": "place-020",
+      "relation": "overlooks",
+      "direction": "北",
+      "snippet": "北望诸[囟比]，",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "《南次二经》之首曰柜山，西临流黄，北望诸[囟比]，东望长右。英水出焉，西南流注于赤水。其中多白玉，多丹粟。有兽焉，其状如豚，有距，其音如狗吠，其名曰狸力，见则其县多土功。有鸟焉，其状如鸱而人手，其音如痹，其名曰[朱鸟]，其名自号也，见则其县多放士。"
+      }
+    },
+    {
+      "from": "place-018",
+      "to": "place-021",
+      "relation": "overlooks",
+      "direction": "东",
+      "snippet": "东望长右。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "《南次二经》之首曰柜山，西临流黄，北望诸[囟比]，东望长右。英水出焉，西南流注于赤水。其中多白玉，多丹粟。有兽焉，其状如豚，有距，其音如狗吠，其名曰狸力，见则其县多土功。有鸟焉，其状如鸱而人手，其音如痹，其名曰[朱鸟]，其名自号也，见则其县多放士。"
+      }
+    },
+    {
+      "from": "place-018",
+      "to": "place-022",
+      "relation": "traverse",
+      "direction": "东南",
+      "distanceLi": 450,
+      "snippet": "东南四百五十里曰长右之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "东南四百五十里曰长右之山。无草木，多水。有兽焉，其状如禺而四耳，其名长右，其音如吟，见则郡县大水。"
+      }
+    },
+    {
+      "from": "place-022",
+      "to": "place-023",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 340,
+      "snippet": "又东三百四十里曰尧光之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百四十里曰尧光之山。其阳多玉，其阴多金。有兽焉，其状如人而彘鬣，穴居而冬蛰，其名曰猾褢，其音如斫木，见则县有大繇。"
+      }
+    },
+    {
+      "from": "place-023",
+      "to": "place-024",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 350,
+      "snippet": "又东三百五十里曰羽山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百五十里曰羽山。其下多水，其上多雨，无草木，多蝮虫。"
+      }
+    },
+    {
+      "from": "place-024",
+      "to": "place-025",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 370,
+      "snippet": "又东三百七十里曰瞿父之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百七十里曰瞿父之山。无草木，多金玉。"
+      }
+    },
+    {
+      "from": "place-025",
+      "to": "place-026",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 400,
+      "snippet": "又东四百里曰句余之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东四百里曰句余之山。无草木，多金玉。"
+      }
+    },
+    {
+      "from": "place-026",
+      "to": "place-027",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 500,
+      "snippet": "又东五百里曰浮玉之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰浮玉之山。北望具区，东望诸[囱比]。有兽焉，其状如虎而牛尾，其音如吠犬，其名曰彘，是食人。苕水出于其阴，北流至于具区，其中多[此/鱼]鱼。"
+      }
+    },
+    {
+      "from": "place-028",
+      "to": "place-029",
+      "relation": "watersFlow",
+      "direction": "北",
+      "snippet": "苕水出于其阴，北流至于具区，",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰浮玉之山。北望具区，东望诸[囱比]。有兽焉，其状如虎而牛尾，其音如吠犬，其名曰彘，是食人。苕水出于其阴，北流至于具区，其中多[此/鱼]鱼。"
+      }
+    },
+    {
+      "from": "place-027",
+      "to": "place-029",
+      "relation": "overlooks",
+      "direction": "北",
+      "snippet": "北望具区，",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰浮玉之山。北望具区，东望诸[囱比]。有兽焉，其状如虎而牛尾，其音如吠犬，其名曰彘，是食人。苕水出于其阴，北流至于具区，其中多[此/鱼]鱼。"
+      }
+    },
+    {
+      "from": "place-027",
+      "to": "place-030",
+      "relation": "overlooks",
+      "direction": "东",
+      "snippet": "东望诸[囱比]。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰浮玉之山。北望具区，东望诸[囱比]。有兽焉，其状如虎而牛尾，其音如吠犬，其名曰彘，是食人。苕水出于其阴，北流至于具区，其中多[此/鱼]鱼。"
+      }
+    },
+    {
+      "from": "place-027",
+      "to": "place-031",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 500,
+      "snippet": "又东五百里曰成山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰成山。四方而三坛，其上多金玉，其下多青雘，[门◎豕]水出焉，而南流注于虖勺，其中多黄金。"
+      }
+    },
+    {
+      "from": "place-032",
+      "to": "place-033",
+      "relation": "watersFlow",
+      "direction": "南",
+      "snippet": "[门◎豕]水出焉，而南流注于虖勺，",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰成山。四方而三坛，其上多金玉，其下多青雘，[门◎豕]水出焉，而南流注于虖勺，其中多黄金。"
+      }
+    },
+    {
+      "from": "place-031",
+      "to": "place-034",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 500,
+      "snippet": "又东五百里曰会稽之山，四方。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰会稽之山，四方。其上多金玉，其下多[石夫]石。勺水出焉，而南流注于湨。"
+      }
+    },
+    {
+      "from": "place-035",
+      "to": "place-036",
+      "relation": "watersFlow",
+      "direction": "南",
+      "snippet": "勺水出焉，而南流注于湨。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰会稽之山，四方。其上多金玉，其下多[石夫]石。勺水出焉，而南流注于湨。"
+      }
+    },
+    {
+      "from": "place-034",
+      "to": "place-037",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 500,
+      "snippet": "又东五百里曰夷山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰夷山。无草木，多沙石，湨水出焉，而南流注于列涂。"
+      }
+    },
+    {
+      "from": "place-038",
+      "to": "place-039",
+      "relation": "watersFlow",
+      "direction": "南",
+      "snippet": "湨水出焉，而南流注于列涂。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰夷山。无草木，多沙石，湨水出焉，而南流注于列涂。"
+      }
+    },
+    {
+      "from": "place-037",
+      "to": "place-040",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 500,
+      "snippet": "又东五百里曰仆勾之山，其上多金玉，其下多草木。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰仆勾之山，其上多金玉，其下多草木。无鸟兽，无水。"
+      }
+    },
+    {
+      "from": "place-040",
+      "to": "place-041",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 500,
+      "snippet": "又东五百里曰咸阴之山，无草木，无水。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰咸阴之山，无草木，无水。"
+      }
+    },
+    {
+      "from": "place-041",
+      "to": "place-042",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 400,
+      "snippet": "又东四百里曰洵山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东四百里曰洵山。其如多金，其阴多玉，有兽焉，其状如羊而无口，不可杀也，其名曰[羊患]。洵水出焉，而南流注于阏之泽，其中多芘蠃。"
+      }
+    },
+    {
+      "from": "place-043",
+      "to": "place-044",
+      "relation": "watersFlow",
+      "direction": "南",
+      "snippet": "洵水出焉，而南流注于阏之泽，",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东四百里曰洵山。其如多金，其阴多玉，有兽焉，其状如羊而无口，不可杀也，其名曰[羊患]。洵水出焉，而南流注于阏之泽，其中多芘蠃。"
+      }
+    },
+    {
+      "from": "place-042",
+      "to": "place-045",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 400,
+      "snippet": "又东四百里曰虖勺之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东四百里曰虖勺之山。其上多梓枏，其下多荆杞。滂水出焉，而东流注于海。"
+      }
+    },
+    {
+      "from": "place-046",
+      "to": "place-003",
+      "relation": "watersFlow",
+      "direction": "东",
+      "snippet": "滂水出焉，而东流注于海。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东四百里曰虖勺之山。其上多梓枏，其下多荆杞。滂水出焉，而东流注于海。"
+      }
+    },
+    {
+      "from": "place-045",
+      "to": "place-047",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 500,
+      "snippet": "又东五百里曰区吴之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰区吴之山。无草木，多沙石，鹿水出焉，而南流注于滂水。"
+      }
+    },
+    {
+      "from": "place-048",
+      "to": "place-046",
+      "relation": "watersFlow",
+      "direction": "南",
+      "snippet": "鹿水出焉，而南流注于滂水。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰区吴之山。无草木，多沙石，鹿水出焉，而南流注于滂水。"
+      }
+    },
+    {
+      "from": "place-047",
+      "to": "place-049",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 500,
+      "snippet": "又东五百里曰鹿吴之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰鹿吴之山。上无草木，多金石。泽更之水出焉，而南流注于滂水。水有兽焉，名曰蛊雕，其状如雕而有角，其音如婴儿之音，是食人。"
+      }
+    },
+    {
+      "from": "place-050",
+      "to": "place-046",
+      "relation": "watersFlow",
+      "direction": "南",
+      "snippet": "泽更之水出焉，而南流注于滂水。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰鹿吴之山。上无草木，多金石。泽更之水出焉，而南流注于滂水。水有兽焉，名曰蛊雕，其状如雕而有角，其音如婴儿之音，是食人。"
+      }
+    },
+    {
+      "from": "place-049",
+      "to": "place-051",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 500,
+      "snippet": "东五百里曰漆吴之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "东五百里曰漆吴之山。无草木，多博石，无玉。处于东海，望丘山，其光载出载入，是惟日次。"
+      }
+    },
+    {
+      "from": "place-051",
+      "to": "place-052",
+      "relation": "locatedAt",
+      "snippet": "处于东海，",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "东五百里曰漆吴之山。无草木，多博石，无玉。处于东海，望丘山，其光载出载入，是惟日次。"
+      }
+    },
+    {
+      "from": "place-054",
+      "to": "place-003",
+      "relation": "watersFlow",
+      "direction": "南",
+      "snippet": "泿水出焉，而南流注于海。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "《南次三经》之首，曰天虞之山。其下多水，不可以上。东五百里曰祷过之山，其上多金玉，其下多犀兕多象，有鸟焉，其状如[交鸟]而白首三足人面，其名曰瞿如，其鸣自号也。泿水出焉，而南流注于海。其中有虎蛟，其状鱼身而蛇尾，其音如鸳鸯，食者不肿，可以已痔。"
+      }
+    },
+    {
+      "from": "place-053",
+      "to": "place-055",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 500,
+      "snippet": "又东五百里曰丹穴之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰丹穴之山。其上多金玉。丹水出焉，而南流注于渤海。有鸟焉，其状如鸡，五采而文，名曰凤皇，首文曰德，翼文曰义，背文曰礼，膺文曰仁，腹文曰信。是鸟也，饮食自然，自歌自舞，见则天下安宁。"
+      }
+    },
+    {
+      "from": "place-056",
+      "to": "place-057",
+      "relation": "watersFlow",
+      "direction": "南",
+      "snippet": "丹水出焉，而南流注于渤海。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰丹穴之山。其上多金玉。丹水出焉，而南流注于渤海。有鸟焉，其状如鸡，五采而文，名曰凤皇，首文曰德，翼文曰义，背文曰礼，膺文曰仁，腹文曰信。是鸟也，饮食自然，自歌自舞，见则天下安宁。"
+      }
+    },
+    {
+      "from": "place-055",
+      "to": "place-058",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 500,
+      "snippet": "又东五百里曰发爽之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰发爽之山。无草木，多水，多白猿。[氵凡]水出焉，而南流注于勃海。"
+      }
+    },
+    {
+      "from": "place-059",
+      "to": "place-060",
+      "relation": "watersFlow",
+      "direction": "南",
+      "snippet": "[氵凡]水出焉，而南流注于勃海。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰发爽之山。无草木，多水，多白猿。[氵凡]水出焉，而南流注于勃海。"
+      }
+    },
+    {
+      "from": "place-058",
+      "to": "place-061",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 400,
+      "snippet": "又东四百里至于旄山之尾，其南有谷，曰育遗，多怪鸟，凯风自是出。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东四百里至于旄山之尾，其南有谷，曰育遗，多怪鸟，凯风自是出。"
+      }
+    },
+    {
+      "from": "place-061",
+      "to": "place-062",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 400,
+      "snippet": "又东四百里，至于非山之首。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东四百里，至于非山之首。其上多金玉，无水，其下多蝮虫。"
+      }
+    },
+    {
+      "from": "place-062",
+      "to": "place-063",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 500,
+      "snippet": "又东五百里曰阳夹之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰阳夹之山。无草木，多水。"
+      }
+    },
+    {
+      "from": "place-063",
+      "to": "place-064",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 500,
+      "snippet": "又东五百里曰灌湘之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰灌湘之山。上多木，无草，多怪鸟，无兽。"
+      }
+    },
+    {
+      "from": "place-064",
+      "to": "place-065",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 500,
+      "snippet": "又东五百里曰鸡山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰鸡山。其上多金，其下多丹雘。黑水出焉，而南流注于海。其中有[鱼专]鱼，其状如鲋而彘毛，其音如豚，见则天下大旱。"
+      }
+    },
+    {
+      "from": "place-066",
+      "to": "place-003",
+      "relation": "watersFlow",
+      "direction": "南",
+      "snippet": "黑水出焉，而南流注于海。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百里曰鸡山。其上多金，其下多丹雘。黑水出焉，而南流注于海。其中有[鱼专]鱼，其状如鲋而彘毛，其音如豚，见则天下大旱。"
+      }
+    },
+    {
+      "from": "place-065",
+      "to": "place-067",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 400,
+      "snippet": "又东四百里曰令丘之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东四百里曰令丘之山。 无草木，多火。其南有谷焉，曰中谷，条风自是出。有鸟焉，其状如袅，人面四目而有耳，其名曰顒，其鸣自号也，见则天下大旱。"
+      }
+    },
+    {
+      "from": "place-067",
+      "to": "place-068",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 370,
+      "snippet": "又东三百七十里曰仑者之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东三百七十里曰仑者之山。其上多金玉，其下多青雘。有木焉，其状如榖而赤理，其汗如漆，其味如饴，食者不饥，可以释劳，其名曰白[艹/咎]，可以血玉。"
+      }
+    },
+    {
+      "from": "place-068",
+      "to": "place-069",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 580,
+      "snippet": "又东五百八十里曰禺[高/木]之山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百八十里曰禺[高/木]之山。多怪兽，多大蛇。"
+      }
+    },
+    {
+      "from": "place-069",
+      "to": "place-070",
+      "relation": "traverse",
+      "direction": "东",
+      "distanceLi": 580,
+      "snippet": "又东五百八十里，曰南禺这山。",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百八十里，曰南禺这山。其上多金玉，其下多水。有穴焉，水出辄入，夏乃出，冬则闭。佐水出焉，而东南流注于海，有凤皇、鵷雏。"
+      }
+    },
+    {
+      "from": "place-071",
+      "to": "place-003",
+      "relation": "watersFlow",
+      "direction": "东南",
+      "snippet": "佐水出焉，而东南流注于海，",
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "又东五百八十里，曰南禺这山。其上多金玉，其下多水。有穴焉，水出辄入，夏乃出，冬则闭。佐水出焉，而东南流注于海，有凤皇、鵷雏。"
+      }
+    }
+  ]
+}

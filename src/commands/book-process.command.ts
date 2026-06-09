@@ -1,36 +1,61 @@
 import { Command, CommandRunner, Option } from 'nest-commander';
+import { BookMapModelService } from '../service/book-map-model.service';
 import { BookSplitService } from '../service/book-split.service';
+
+interface BookProcessOptions {
+  command?: string;
+  input?: string;
+  output?: string;
+  book?: string;
+  chapter?: string;
+  sourceDir?: string;
+  merge?: string;
+}
 
 @Command({
   name: 'book-process',
   description:
-    '古籍处理命令，支持拆分章节与 txt→md 转换等操作。使用 `npm run cli -- book-process --help` 查看帮助。',
+    '古籍处理命令，支持拆分章节与 txt→md 转换等操作。使用 `npm run cli book-process --help` 查看帮助。',
 })
 export class BookProcessCommand extends CommandRunner {
-  constructor(private readonly bookSplitService: BookSplitService) {
+  constructor(
+    private readonly bookSplitService: BookSplitService,
+    private readonly bookMapModelService: BookMapModelService,
+  ) {
     super();
   }
 
   async run(
     _passedParam: string[],
-    options?: Record<string, any>,
+    options?: BookProcessOptions,
   ): Promise<void> {
     if (!options?.command) {
       this.printRuntimeGuide();
       return;
     }
     switch (options.command) {
-      // npm run cli -- book-process -- -c split -i ShanHaiJing/Shanhaijing.txt
+      // npm run cli book-process -- -c split -i ShanHaiJing/Shanhaijing.txt
       case 'split':
         this.bookSplitService.splitBook(options);
         break;
-      // npm run cli -- book-process -- -c txt2md -b ShanHaiJing
-      // npm run cli -- book-process -- -c txt2md -b ShanHaiJing -n 01
+      // npm run cli book-process -- -c txt2md -b ShanHaiJing
+      // npm run cli book-process -- -c txt2md -b ShanHaiJing -n 01
       case 'txt2md':
         this.bookSplitService.txt2md(
           options.book ?? 'ShanHaiJing',
           options.chapter,
         );
+        break;
+      // npm run cli book-process -- -c map-model -b ShanHaiJing -n 01
+      // npm run cli book-process -- -c map-model -i book/ShanHaiJing/md_chapters/01-南山经.md
+      case 'map-model':
+        this.bookMapModelService.buildMapModel({
+          book: options.book ?? 'ShanHaiJing',
+          chapter: options.chapter,
+          input: options.input,
+          output: options.output,
+          sourceDir: options.sourceDir,
+        });
         break;
       default:
         console.log(`未找到子命令: ${options.command}`);
@@ -80,6 +105,15 @@ export class BookProcessCommand extends CommandRunner {
   }
 
   @Option({
+    flags: '--source-dir [sourceDir]',
+    description:
+      '章节来源目录名，默认 md_chapters，可选 txt_chapters 或其他目录',
+  })
+  getSourceDir(val: string): string {
+    return val;
+  }
+
+  @Option({
     flags: '--merge [merge]',
     description: '合并模式：将拆分后的章节文件合并到指定路径',
   })
@@ -93,7 +127,7 @@ export class BookProcessCommand extends CommandRunner {
       'for linux npm run cli book-process -- -c <command> [-i <input>] [-o <output>]',
     );
     console.log(
-      'for windows  npm run cli -- book-process -- -c <command> [-i <input>] [-o <output>]',
+      'for windows  npm run cli book-process -- -c <command> [-i <input>] [-o <output>]',
     );
     console.log('');
     console.log('可用子命令:');
@@ -105,20 +139,25 @@ export class BookProcessCommand extends CommandRunner {
     console.log('');
     console.log('示例:');
     console.log(
-      '  npm run cli -- book-process -- -c split' +
+      '  npm run cli book-process -- -c split' +
         ' -i ./book/ShanHaiJing/Shanhaijing.txt' +
         ' -o ./book/ShanHaiJing/chapters',
     );
     console.log(
-      '  npm run cli -- book-process -- -c merge' +
+      '  npm run cli book-process -- -c merge' +
         ' -o ./book/ShanHaiJing/chapters' +
         ' --merge ./book/ShanHaiJing/merged.txt',
     );
+    console.log('  npm run cli book-process -- -c txt2md' + ' -b ShanHaiJing');
     console.log(
-      '  npm run cli -- book-process -- -c txt2md' + ' -b ShanHaiJing',
+      '  npm run cli book-process -- -c txt2md' + ' -b ShanHaiJing -n 01',
     );
     console.log(
-      '  npm run cli -- book-process -- -c txt2md' + ' -b ShanHaiJing -n 01',
+      '  npm run cli book-process -- -c map-model' + ' -b ShanHaiJing -n 01',
+    );
+    console.log(
+      '  npm run cli book-process -- -c map-model' +
+        ' -i book/ShanHaiJing/md_chapters/01-南山经.md',
     );
   }
 
@@ -129,6 +168,10 @@ export class BookProcessCommand extends CommandRunner {
       {
         name: 'txt2md',
         description: '将 txt_chapters 转换为 md_chapters（Markdown）',
+      },
+      {
+        name: 'map-model',
+        description: '将章节古文抽取为地图建模数据（graph/entities/summary）',
       },
     ];
   }

@@ -1,0 +1,397 @@
+{
+  "metadata": {
+    "book": "ShanHaiJing",
+    "chapter": "南山经第一",
+    "sourceFile": "book/ShanHaiJing/md_chapters/01-南山经.md",
+    "notes": [
+      "仅收录规则可稳定识别的命名实体。",
+      "未命名的泛称物产默认不拆分为独立实体。"
+    ]
+  },
+  "entities": [
+    {
+      "id": "entity-001",
+      "name": "祝馀",
+      "category": "plant",
+      "type": "plant",
+      "locatedAt": [
+        "place-002"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "有草焉，其状如韭而青华，其名曰祝馀，食之不饥。"
+      },
+      "description": "有草焉",
+      "effects": [
+        "食之不饥"
+      ]
+    },
+    {
+      "id": "entity-002",
+      "name": "狌狌",
+      "category": "creature",
+      "type": "beast",
+      "locatedAt": [
+        "place-002"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "有兽焉，其状如禺而白耳，伏行人走，其名曰狌狌，食之善走。"
+      },
+      "description": "有兽焉",
+      "effects": [
+        "食之善走"
+      ]
+    },
+    {
+      "id": "entity-003",
+      "name": "育沛",
+      "category": "object",
+      "type": "mineral",
+      "locatedAt": [
+        "place-002"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "丽[鹿/旨]之水出焉，而西流注于海，其中多育沛，佩之无瘕疾。"
+      },
+      "description": "丽[鹿/旨]之水出焉",
+      "effects": [
+        "佩之无瘕疾"
+      ]
+    },
+    {
+      "id": "entity-004",
+      "name": "鹿蜀",
+      "category": "creature",
+      "type": "beast",
+      "locatedAt": [
+        "place-008"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "有兽焉，其状如马而白首，其文如虎而赤尾，其音如谣，其名曰鹿蜀，佩之宜子孙。"
+      },
+      "description": "有兽焉",
+      "effects": [
+        "佩之宜子孙"
+      ]
+    },
+    {
+      "id": "entity-005",
+      "name": "鯥",
+      "category": "creature",
+      "type": "fish",
+      "locatedAt": [
+        "place-010"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "有鱼焉，其状如牛，陵居，蛇尾有翼，其羽在[鱼去]下，其音如留牛，其名曰鯥，冬死而复生。"
+      },
+      "description": "有鱼焉",
+      "effects": [
+        "冬死而复生"
+      ]
+    },
+    {
+      "id": "entity-006",
+      "name": "类",
+      "category": "creature",
+      "type": "beast",
+      "locatedAt": [
+        "place-011"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "有兽焉，其状如狸而有髦，其名曰类，自为牝牡，食者不妒。"
+      },
+      "description": "有兽焉",
+      "effects": [
+        "自为牝牡"
+      ]
+    },
+    {
+      "id": "entity-007",
+      "name": "[犭専][讠也]",
+      "category": "creature",
+      "type": "beast",
+      "locatedAt": [
+        "place-011"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "有兽焉，其状如羊，九尾四耳，其目在背，其名曰[犭専][讠也]，佩之为畏。"
+      },
+      "description": "有兽焉",
+      "effects": [
+        "佩之为畏"
+      ]
+    },
+    {
+      "id": "entity-008",
+      "name": "[尚鸟][付鸟]",
+      "category": "creature",
+      "type": "bird",
+      "locatedAt": [
+        "place-011"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "有鸟焉，其状如鸡而三首、六目、六足、三翼，其名曰[尚鸟][付鸟]，食之无卧。"
+      },
+      "description": "有鸟焉",
+      "effects": [
+        "食之无卧"
+      ]
+    },
+    {
+      "id": "entity-009",
+      "name": "灌灌",
+      "category": "creature",
+      "type": "bird",
+      "locatedAt": [
+        "place-013"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "有鸟焉，其状如鸠，其音如呵，名曰灌灌，佩之不惑。"
+      },
+      "description": "有鸟焉",
+      "effects": [
+        "佩之不惑"
+      ]
+    },
+    {
+      "id": "entity-010",
+      "name": "狸力",
+      "category": "creature",
+      "type": "beast",
+      "locatedAt": [
+        "place-013"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "有兽焉，其状如豚，有距，其音如狗吠，其名曰狸力，见则其县多土功。"
+      },
+      "description": "有兽焉",
+      "effects": [
+        "见则其县多土功"
+      ]
+    },
+    {
+      "id": "entity-011",
+      "name": "[朱鸟]",
+      "category": "creature",
+      "type": "bird",
+      "locatedAt": [
+        "place-013"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "有鸟焉，其状如鸱而人手，其音如痹，其名曰[朱鸟]，其名自号也，见则其县多放士。"
+      },
+      "description": "有鸟焉",
+      "effects": [
+        "见则其县多放士"
+      ]
+    },
+    {
+      "id": "entity-012",
+      "name": "长右",
+      "category": "creature",
+      "type": "beast",
+      "locatedAt": [
+        "place-022"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "有兽焉，其状如禺而四耳，其名长右，其音如吟，见则郡县大水。"
+      },
+      "description": "有兽焉",
+      "effects": [
+        "见则郡县大水"
+      ]
+    },
+    {
+      "id": "entity-013",
+      "name": "猾褢",
+      "category": "creature",
+      "type": "beast",
+      "locatedAt": [
+        "place-023"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "有兽焉，其状如人而彘鬣，穴居而冬蛰，其名曰猾褢，其音如斫木，见则县有大繇。"
+      },
+      "description": "有兽焉",
+      "effects": [
+        "见则县有大繇"
+      ]
+    },
+    {
+      "id": "entity-014",
+      "name": "彘",
+      "category": "creature",
+      "type": "beast",
+      "locatedAt": [
+        "place-028"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "有兽焉，其状如虎而牛尾，其音如吠犬，其名曰彘，是食人。"
+      },
+      "description": "有兽焉"
+    },
+    {
+      "id": "entity-015",
+      "name": "[羊患]",
+      "category": "creature",
+      "type": "beast",
+      "locatedAt": [
+        "place-043"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "其如多金，其阴多玉，有兽焉，其状如羊而无口，不可杀也，其名曰[羊患]。"
+      },
+      "description": "其如多金"
+    },
+    {
+      "id": "entity-016",
+      "name": "蛊雕",
+      "category": "creature",
+      "type": "beast",
+      "locatedAt": [
+        "place-050"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "水有兽焉，名曰蛊雕，其状如雕而有角，其音如婴儿之音，是食人。"
+      },
+      "description": "水有兽焉"
+    },
+    {
+      "id": "entity-017",
+      "name": "瞿如",
+      "category": "creature",
+      "type": "bird",
+      "locatedAt": [
+        "place-054"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "东五百里曰祷过之山，其上多金玉，其下多犀兕多象，有鸟焉，其状如[交鸟]而白首三足人面，其名曰瞿如，其鸣自号也。"
+      },
+      "description": "东五百里曰祷过之山"
+    },
+    {
+      "id": "entity-018",
+      "name": "凤皇",
+      "category": "creature",
+      "type": "bird",
+      "locatedAt": [
+        "place-056",
+        "place-071"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "有鸟焉，其状如鸡，五采而文，名曰凤皇，首文曰德，翼文曰义，背文曰礼，膺文曰仁，腹文曰信。"
+      },
+      "description": "有鸟焉",
+      "uncertain": true
+    },
+    {
+      "id": "entity-019",
+      "name": "顒",
+      "category": "creature",
+      "type": "bird",
+      "locatedAt": [
+        "place-067"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "有鸟焉，其状如袅，人面四目而有耳，其名曰顒，其鸣自号也，见则天下大旱。"
+      },
+      "description": "有鸟焉",
+      "effects": [
+        "见则天下大旱"
+      ]
+    },
+    {
+      "id": "entity-020",
+      "name": "白[艹/咎]",
+      "category": "plant",
+      "type": "plant",
+      "locatedAt": [
+        "place-068"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "有木焉，其状如榖而赤理，其汗如漆，其味如饴，食者不饥，可以释劳，其名曰白[艹/咎]，可以血玉。"
+      },
+      "description": "有木焉",
+      "effects": [
+        "可以释劳",
+        "可以血玉"
+      ]
+    },
+    {
+      "id": "entity-021",
+      "name": "鵷雏",
+      "category": "creature",
+      "type": "bird",
+      "locatedAt": [
+        "place-071"
+      ],
+      "source": {
+        "book": "ShanHaiJing",
+        "chapter": "南山经第一",
+        "file": "book/ShanHaiJing/md_chapters/01-南山经.md",
+        "snippet": "佐水出焉，而东南流注于海，有凤皇、鵷雏。"
+      },
+      "uncertain": true
+    }
+  ]
+}

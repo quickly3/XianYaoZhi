@@ -89,7 +89,7 @@ export class XxxCommand extends CommandRunner {
   private printRuntimeGuide() {
     console.log('XxxCommand 运行说明:');
     console.log('for linux npm run cli xxx -- -c <command> [options]');
-    console.log('for windows  npm run cli -- xxx -- -c <command> [options]');
+    console.log('for windows  npm run cli xxx -- -c <command> [options]');
     console.log('');
     console.log('可用子命令:');
 

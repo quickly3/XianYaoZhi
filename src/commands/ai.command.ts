@@ -1,4 +1,5 @@
 import { Command, CommandRunner, Option } from 'nest-commander';
+import { DeepseekService } from 'src/service/ai/deepseek.service';
 
 @Command({
   name: 'ai',
@@ -6,17 +7,25 @@ import { Command, CommandRunner, Option } from 'nest-commander';
     'AI 相关命令入口。使用 `npm run cli -- ai --help` 查看帮助，使用 `npm run cli -- ai -c <command>` 执行具体子命令。',
 })
 export class AiCommand extends CommandRunner {
-  constructor() {
+  constructor(private readonly deepseekService: DeepseekService) {
     super();
   }
 
-  run(passedParam: string[], options?: any): any {
+  async run(passedParam: string[], options?: any): Promise<any> {
     if (!options?.command) {
       this.printRuntimeGuide();
       return;
     }
-
     switch (options.command) {
+      // npm run cli -- ai -- -c transToCn
+      case 'transToCn':
+        {
+          const resp = await this.deepseekService.chat({
+            message: '请将以下英文翻译成中文：' + options.message,
+          });
+          console.log('翻译结果：', resp);
+        }
+        break;
       default:
         console.log(`未找到子命令: ${options.command}`);
         this.printRuntimeGuide();
@@ -47,6 +56,14 @@ export class AiCommand extends CommandRunner {
   })
   getMaxCount(val: string): number {
     return parseInt(val, 10) || 8;
+  }
+
+  @Option({
+    flags: '-m,--message [message]',
+    description: '要发送的消息内容',
+  })
+  getMessage(val: string): string {
+    return val;
   }
 
   private printRuntimeGuide() {
