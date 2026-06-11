@@ -1,0 +1,53 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  schemas  = ["xianyao"]
+}
+
+model Book {
+  id        Int      @id @default(autoincrement())
+  name      String
+  status    String?
+  content   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@schema("xianyao")
+}
+
+// 古籍章节
+model Chapter {
+  id        Int      @id @default(autoincrement())
+  bookId    Int
+  bookName  String
+  status    String?
+  title     String
+  content   String?
+  sortOrder Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([bookId])
+  @@schema("xianyao")
+}
+
+model Entity {
+  id          Int      @id @default(autoincrement())
+  bookId      Int
+  chapterId   Int
+  name        String
+  status      String?
+  category    String
+  origin      String
+  description String?
+  aliases     String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([bookId])
+  @@index([chapterId])
+  @@schema("xianyao")
+}

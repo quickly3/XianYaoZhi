@@ -40,7 +40,7 @@ import { XxxService } from 'src/service/xxx.service';
 @Command({
   name: 'xxx',
   description:
-    'xxx 相关命令入口。使用 `npm run cli -- xxx --help` 查看帮助，使用 `npm run cli -- xxx -c <command>` 执行具体子命令。',
+    'xxx 相关命令入口。使用 `yarn cli xxx --help` 查看帮助，使用 `yarn cli xxx -c <command>` 执行具体子命令。',
 })
 export class XxxCommand extends CommandRunner {
   constructor(

@@ -13,6 +13,11 @@ export default () => {
     port: process.env.PORT || 3001,
     deepseek: {
       DS_KEY: process.env.DS_KEY,
+      DS_URL: process.env.DS_URL,
+    },
+    ark: {
+      ARK_KEY: process.env.ARK_KEY,
+      ARK_URL: process.env.ARK_URL,
     },
   };
 };

@@ -8,10 +8,13 @@ import { BookMapModelParserService } from 'src/service/book-map-model-parser.ser
 import { BookMapModelService } from 'src/service/book-map-model.service';
 import { BookSplitService } from 'src/service/book-split.service';
 import { ExtractEntitiesService } from 'src/service/book/extract-entities.service';
+import { FindEntityOriginService } from 'src/service/book/find-entity-origin.service';
+import { PrismaService } from 'src/service/prisma.service';
 import { CommandModule } from 'nestjs-command';
 import configuration from 'src/config';
 import { ConfigModule } from '@nestjs/config';
-import { DeepseekService } from 'src/service/ai/deepseek.service';
+import { DeepSeekService } from 'src/service/ai/deepseek.service';
+import { LogService } from 'src/service/logger.service';
 
 @Module({
   imports: [
@@ -32,7 +35,10 @@ import { DeepseekService } from 'src/service/ai/deepseek.service';
     BookMapModelOutputService,
     BookMapModelService,
     ExtractEntitiesService,
-    DeepseekService,
+    FindEntityOriginService,
+    DeepSeekService,
+    PrismaService,
+    LogService,
   ],
 })
 export class CliModule {}

@@ -1,5 +1,8 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import { Injectable } from '@nestjs/common';
+import { PrismaService } from './prisma.service';
+import { bookStatus, chapterStatus, entityStatus } from './book/book.enum';
 
 /** 中文数字 → 阿拉伯数字映射 */
 const CN_NUM_MAP: Record<string, number> = {
@@ -32,6 +35,7 @@ export interface ChapterInfo {
   content: string;
 }
 
+@Injectable()
 export class BookSplitService {
   /**
    * 将文件按章节拆分
@@ -39,6 +43,9 @@ export class BookSplitService {
    * @param outputDir 输出目录
    */
 
+  constructor(
+    private readonly prisma: PrismaService, // 替换为实际的 PrismaService 类型
+  ) {}
   splitBook(options) {
     const { input } = options;
 
@@ -266,5 +273,136 @@ export class BookSplitService {
     }
 
     return result.join('\n') + '\n';
+  }
+
+  async importToDb() {
+    const bookName = '山海经';
+    const txtChaptersDir = path.join(
+      process.cwd(),
+      'book/ShanHaiJing/txt_chapters',
+    );
+    const entitiesDir = path.join(process.cwd(), 'book/ShanHaiJing/entities');
+
+    // 扫描所有章节文件（排除 00-前言 和 19-结语）
+    const chapterFiles = fs
+      .readdirSync(txtChaptersDir)
+      .filter((f) => f.endsWith('.txt'))
+      .filter((f) => !f.startsWith('00-') && !f.startsWith('19-'))
+      .sort();
+
+    console.log(`共发现 ${chapterFiles.length} 个章节文件`);
+
+    // 查找或创建 Book（只创建一次）
+    let book = await this.prisma.book.findFirst({
+      where: { name: bookName },
+    });
+
+    if (!book) {
+      book = await this.prisma.book.create({
+        data: {
+          name: bookName,
+          status: bookStatus.init,
+        },
+      });
+      console.log(`创建书籍: ${bookName} (id=${book.id})`);
+    } else {
+      console.log(`书籍已存在: ${bookName} (id=${book.id})`);
+    }
+
+    let totalEntities = 0;
+
+    for (const chapterFile of chapterFiles) {
+      // 从文件名提取章节标题，如 "01-南山经.txt" → "南山经"
+      const chapterTitle = chapterFile
+        .replace(/^\d+-/, '')
+        .replace(/\.txt$/, '');
+      const sortOrder = parseInt(chapterFile.match(/^(\d+)-/)?.[1] || '0', 10);
+
+      const chapterPath = path.join(txtChaptersDir, chapterFile);
+      const content = fs.readFileSync(chapterPath, 'utf-8');
+
+      console.log(
+        `\n处理章节: ${chapterTitle} (排序=${sortOrder}, 原文${content.length}字)`,
+      );
+
+      // 查找或创建 Chapter
+      let chapter = await this.prisma.chapter.findFirst({
+        where: { bookId: book.id, title: chapterTitle },
+      });
+
+      if (!chapter) {
+        chapter = await this.prisma.chapter.create({
+          data: {
+            bookId: book.id,
+            bookName: bookName,
+            title: chapterTitle,
+            content: content,
+            sortOrder,
+            status: chapterStatus.init,
+          },
+        });
+        console.log(`  创建章节: ${chapterTitle} (id=${chapter.id})`);
+      } else {
+        console.log(`  章节已存在: ${chapterTitle} (id=${chapter.id})`);
+      }
+
+      // 尝试读取对应的实体 JSON 文件
+      const entitiesFile = path.join(
+        entitiesDir,
+        chapterFile.replace(/\.txt$/, '.json'),
+      );
+      if (!fs.existsSync(entitiesFile)) {
+        console.log(`  无实体文件，跳过实体导入`);
+        continue;
+      }
+
+      const entitiesRaw = fs.readFileSync(entitiesFile, 'utf-8');
+      const entities = JSON.parse(entitiesRaw);
+
+      console.log(
+        `  实体数据: 地点${entities.places?.length || 0}个, 异兽${entities.creatures?.length || 0}个, 植物${entities.plants?.length || 0}个`,
+      );
+
+      // 将实体数据写入 Entity 表
+      const entityCategories = [
+        { key: 'places', category: '地点' },
+        { key: 'creatures', category: '异兽' },
+        { key: 'plants', category: '植物' },
+        { key: 'minerals', category: '矿物' },
+        { key: 'artifacts', category: '器物' },
+        { key: 'characters', category: '人物' },
+        { key: 'tribes', category: '族群' },
+      ];
+
+      let entityCount = 0;
+      for (const { key, category } of entityCategories) {
+        const items: string[] = entities[key] || [];
+        for (const name of items) {
+          const existing = await this.prisma.entity.findFirst({
+            where: { bookId: book.id, chapterId: chapter.id, name, category },
+          });
+          if (!existing) {
+            await this.prisma.entity.create({
+              data: {
+                bookId: book.id,
+                chapterId: chapter.id,
+                name,
+                category,
+                origin: chapterTitle,
+                status: entityStatus.init,
+              },
+            });
+            entityCount++;
+          }
+        }
+      }
+
+      console.log(`  写入实体: ${entityCount} 条`);
+      totalEntities += entityCount;
+    }
+
+    console.log(
+      `\n全部完成！共处理 ${chapterFiles.length} 个章节，写入 ${totalEntities} 条实体`,
+    );
   }
 }

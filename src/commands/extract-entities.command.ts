@@ -1,20 +1,23 @@
 import { Command, CommandRunner, Option } from 'nest-commander';
 import { ExtractEntitiesService } from 'src/service/book/extract-entities.service';
+import { FindEntityOriginService } from 'src/service/book/find-entity-origin.service';
 
 interface ExtractEntitiesOptions {
   command?: string;
   book?: string;
   chapter?: string;
-  sourceDir?: string;
 }
 
 @Command({
   name: 'extract-entities',
   description:
-    '古籍实体提取命令。使用 DeepSeek 从章节文本中提取命名实体，结果保存到 entities 目录。使用 `npm run cli -- extract-entities --help` 查看帮助。',
+    '古籍实体提取命令。从数据库读取 status=init 的章节，使用 DeepSeek 提取命名实体并写入 Entity 表。使用 `yarn cli extract-entities --help` 查看帮助。',
 })
 export class ExtractEntitiesCommand extends CommandRunner {
-  constructor(private readonly extractEntitiesService: ExtractEntitiesService) {
+  constructor(
+    private readonly extractEntitiesService: ExtractEntitiesService,
+    private readonly findEntityOriginService: FindEntityOriginService,
+  ) {
     super();
   }
 
@@ -28,13 +31,20 @@ export class ExtractEntitiesCommand extends CommandRunner {
     }
 
     switch (options.command) {
-      // npm run cli extract-entities -- -c extract -b ShanHaiJing
-      // npm run cli extract-entities -- -c extract -b ShanHaiJing -n 01
+      // yarn cli extract-entities -- -c extract -b ShanHaiJing
+      // yarn cli extract-entities -c extract -b ShanHaiJing -n 01
       case 'extract':
         await this.extractEntitiesService.extract({
           book: options.book ?? 'ShanHaiJing',
           chapter: options.chapter,
-          sourceDir: options.sourceDir,
+        });
+        break;
+      // yarn cli extract-entities -c origin -b ShanHaiJing
+      // yarn cli extract-entities -c origin -b ShanHaiJing -n 01
+      case 'origin':
+        await this.findEntityOriginService.findOrigins({
+          book: options.book ?? 'ShanHaiJing',
+          chapter: options.chapter,
         });
         break;
       default:
@@ -62,27 +72,17 @@ export class ExtractEntitiesCommand extends CommandRunner {
 
   @Option({
     flags: '-n, --chapter [chapter]',
-    description: '可选，仅处理指定章节前缀（如 01）',
+    description: '可选，仅处理指定章节标题前缀（如 01）',
   })
   getChapter(val: string): string {
     return val;
   }
 
-  @Option({
-    flags: '--source-dir [sourceDir]',
-    description: '章节来源目录路径，默认 book/{book}/txt_chapters',
-  })
-  getSourceDir(val: string): string {
-    return val;
-  }
-
   private printRuntimeGuide() {
     console.log('ExtractEntitiesCommand 运行说明:');
+    console.log('for linux yarn cli extract-entities -c <command> [options]');
     console.log(
-      'for linux npm run cli extract-entities -- -c <command> [options]',
-    );
-    console.log(
-      'for windows  npm run cli extract-entities -- -c <command> [options]',
+      'for windows  yarn cli extract-entities -c <command> [options]',
     );
     console.log('');
     console.log('可用子命令:');
@@ -93,13 +93,8 @@ export class ExtractEntitiesCommand extends CommandRunner {
 
     console.log('');
     console.log('示例:');
-    console.log('  npm run cli extract-entities -- -c extract -b ShanHaiJing');
-    console.log(
-      '  npm run cli extract-entities -- -c extract -b ShanHaiJing -n 01',
-    );
-    console.log(
-      '  npm run cli extract-entities -- -c extract -b ShanHaiJing --source-dir book/ShanHaiJing/txt_chapters',
-    );
+    console.log('  yarn cli extract-entities -c extract -b ShanHaiJing');
+    console.log('  yarn cli extract-entities -c extract -b ShanHaiJing -n 01');
   }
 
   private getCommandDescriptions(): Array<{
@@ -110,6 +105,10 @@ export class ExtractEntitiesCommand extends CommandRunner {
       {
         name: 'extract',
         description: '提取实体的主要命令，遍历章节文件并调用 AI 提取',
+      },
+      {
+        name: 'origin',
+        description: '查询实体出处，读取 entities JSON 为每个实体查找原文段落',
       },
     ];
   }

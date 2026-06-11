@@ -9,12 +9,18 @@ const modelMap = {
 };
 
 @Injectable()
-export class DeepseekService {
+export class DeepSeekService {
   public openai: OpenAI;
   constructor(private readonly configService: ConfigService) {
+    // const dsKey = this.configService.get<string>('deepseek.DS_KEY');
+    // const dsUrl = this.configService.get<string>('deepseek.DS_URL');
+
+    const dsKey = this.configService.get<string>('ark.ARK_KEY');
+    const dsUrl = this.configService.get<string>('ark.ARK_URL');
+
     this.openai = new OpenAI({
-      baseURL: 'https://api.deepseek.com',
-      apiKey: this.configService.get<string>('deepseek.DS_KEY'),
+      baseURL: dsUrl,
+      apiKey: dsKey,
     });
   }
 

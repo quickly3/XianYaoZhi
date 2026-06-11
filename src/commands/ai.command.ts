@@ -1,5 +1,5 @@
 import { Command, CommandRunner, Option } from 'nest-commander';
-import { DeepseekService } from 'src/service/ai/deepseek.service';
+import { DeepSeekService } from 'src/service/ai/deepseek.service';
 
 @Command({
   name: 'ai',
@@ -7,7 +7,7 @@ import { DeepseekService } from 'src/service/ai/deepseek.service';
     'AI 相关命令入口。使用 `npm run cli -- ai --help` 查看帮助，使用 `npm run cli -- ai -c <command>` 执行具体子命令。',
 })
 export class AiCommand extends CommandRunner {
-  constructor(private readonly deepseekService: DeepseekService) {
+  constructor(private readonly DeepSeekService: DeepSeekService) {
     super();
   }
 
@@ -17,10 +17,10 @@ export class AiCommand extends CommandRunner {
       return;
     }
     switch (options.command) {
-      // npm run cli -- ai -- -c transToCn
+      // yarn cli ai -c transToCn -m "wo are you"
       case 'transToCn':
         {
-          const resp = await this.deepseekService.chat({
+          const resp = await this.DeepSeekService.chat({
             message: '请将以下英文翻译成中文：' + options.message,
           });
           console.log('翻译结果：', resp);

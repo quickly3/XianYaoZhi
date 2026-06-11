@@ -61,3 +61,31 @@ export function buildEntityExtractionPrompt(text: string): string {
 ${text}
 \`\`\``;
 }
+
+/**
+ * 事物出处查询提示词
+ *
+ * 给定一个事物名称（如山名、水名、异兽名等）和古籍原文，
+ * 让 AI 找出该事物在原文中出现的完整段落，只返回原文。
+ */
+
+export const entityOriginSystemPrompt = `你是一位精通中国古代文献的专家。你的任务是：根据用户提供的事物名称，在给定的古籍原文中找出该事物所在的完整段落，并**只返回原文**。
+
+## 规则
+
+1. 找出原文中**首次出现**该事物名称的完整段落（从该段落开头到该段落结束）
+2. 段落以原文的自然分段为准（通常以句号、换行或明显的话题转换为界）
+3. 如果该事物在原文中出现多次，只返回**首次出现**的那个段落
+4. **只返回原文内容，不要添加任何解释、说明、标注或 Markdown 格式**
+5. 如果找不到该事物，只返回空字符串`;
+
+export function buildEntityOriginPrompt(
+  entityName: string,
+  text: string,
+): string {
+  return `请在以下古籍原文中找出"${entityName}"所在的完整段落，只返回原文：
+
+\`\`\`
+${text}
+\`\`\``;
+}
